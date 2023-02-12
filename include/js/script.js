@@ -88,8 +88,8 @@ function titType(){
 function experience(){
 	$(window).scroll(function(){
 		var projectHeight = $('.js-project-wrap').offset().top - 400,
-			projectLastHeight = $('.js-contact-wrap').offset().top - 200;
-		var currentScroll = $(document).scrollTop();
+			projectLastHeight = $('.js-contact-wrap').offset().top - 200,
+			currentScroll = $(document).scrollTop();
 		
 		if(projectHeight < currentScroll){
 			$('.js-exp-conbox').addClass('on');
@@ -109,23 +109,6 @@ function experience(){
 	$('.js-exp-conbox').mouseleave(function(){
 		$(this).children('.js-exp-info').stop().fadeOut();
 	});
-
-	// $('.js-exp-menu > li > a').on('click', function(){
-	// 	$('.js-exp-menu > li').removeClass('on');
-	// 	$(this).parent().addClass('on');
-	// 	$('.js-exp-conbox').removeClass('on').hide();
-	// 	if($(this).parent().hasClass('legacy')){
-	// 		$('.js-exp-list-wrap').css('height', '700px');
-	// 		$('.js-exp-conbox.legacy').addClass('on').show();
-	// 	}else if($(this).parent().hasClass('new')){
-	// 		$('.js-exp-list-wrap').css('height', '850px');
-	// 		$('.js-exp-conbox.new').addClass('on').show();
-	// 	}else{
-	// 		$('.js-exp-list-wrap').css('height', '1400px');
-	// 		$('.js-exp-conbox').addClass('on').show();
-
-	// 	}
-	// })
 }
 
 function mExperience(){

@@ -1,10 +1,8 @@
 $(document).ready(function(){
-	var $width = $(window).innerWidth(),
-		wWidth = windowWidth();
+	var wWidth = $(window).innerWidth();
 
 	nav();
 	titType();
-	windowWidth();
 
 	event();
 
@@ -19,29 +17,11 @@ $(document).ready(function(){
 	}
 
 	$(window).resize(function(e){
-		$width = $(window).innerWidth();
-		wWidth = windowWidth();
-		
+		var wWidth = $(window).innerWidth();
 		event();
 	});
 	
 })
-
-function Mobile(){
-	return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-function windowWidth() {
-	if ($(document).innerHeight() > $('window').innerHeight()) {
-		if(Mobile()){
-			return $(window).innerWidth();
-		}else{
-			return $(window).innerWidth() + 17;
-		}		
-	} else {
-		return $(window).innerWidth();
-	}
-}
 
 function nav(){
 	$('.js-btn-nav').on('click',function(e){

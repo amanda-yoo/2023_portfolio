@@ -198,7 +198,8 @@
 .exp-text .exp-tit:hover:after{width: 100%;}
 .exp-text span{display: inline-block;margin: 2px;padding: 3px 10px;border: 1px solid #000;background-color: #000;border-radius: 5px;font-size: 1.5rem;line-height: 1.2em;color: #fff;}
 .new .exp-text .exp-type{border-color: #f91858;background-color: #f91858;}
-.legacy .exp-text .exp-type{border-color: #171c8f;background-color: #171c8f;}.exp-text > .exp-notopen{border-color: #c03;background-color: #c03;}
+.legacy .exp-text .exp-type{border-color: #171c8f;background-color: #171c8f;}
+.exp-text > .exp-notopen{border-color: #ff0;background-color: #ff0;color: #000;font-weight: 900;}
 
 /* contact */
 .contact-wrap{position: relative;background-color: #fffaf6;}
@@ -238,7 +239,7 @@
 	.how-list > li + li{margin-left: 0;margin-top: 20px;}
 
 	.exp-conbox{width: 200px;}
-	.exp-conbox:before{display: none;}
+	.exp-conbox:after, .exp-conbox:before{display: none;}
 	.exp-list-wrap{height: 1450px;}
 }
 

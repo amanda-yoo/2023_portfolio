@@ -67,8 +67,8 @@
   transition: 0.3s;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.17);
 }
-.btn-top i {
-  font-size: 25px;
+.btn-top img {
+  max-width: 100%;
 }
 .btn-top.on {
   opacity: 1;
@@ -580,12 +580,13 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 .pro-list-wrap .pro-list .pro-conbox .img-wrap a:after {
-  content: "\e980";
+  content: "View Site";
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: xeicon;
-  font-size: 3rem;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  font-size: 2rem;
   color: #ffffff;
 }
 .pro-list-wrap .pro-list .pro-conbox .img-wrap a:hover:before, .pro-list-wrap .pro-list .pro-conbox .img-wrap a:hover:after {
@@ -656,14 +657,11 @@
   margin-top: 50px;
 }
 .contact-conbox dl dt {
-  width: 70px;
+  width: 60px;
   text-align: center;
 }
-.contact-conbox dl dt i {
-  font-size: 6rem;
-}
-.contact-conbox dl:first-child dt i {
-  font-size: 7rem;
+.contact-conbox dl dt img {
+  max-width: 100%;
 }
 .contact-conbox dl dd {
   margin-left: 20px;
@@ -722,12 +720,15 @@
 }
 
 .btn-pop-close {
-  font-size: 24px;
-  color: #222;
+  display: inline-block;
+  width: 40px;
+}
+.btn-pop-close img {
+  max-width: 100%;
 }
 
 .pop-body {
-  padding: 20px 20px 40px;
+  padding: 0 20px 40px;
   text-align: center;
 }
 .pop-body .img-wrap {
@@ -899,13 +900,7 @@
     margin-top: 20px;
   }
   .contact-conbox dl dt {
-    width: 40px;
-  }
-  .contact-conbox dl dt i {
-    font-size: 4rem;
-  }
-  .contact-conbox dl:first-child dt i {
-    font-size: 5rem;
+    width: 25px;
   }
   .contact-conbox dl dd {
     margin-left: 10px;
@@ -918,7 +913,7 @@
     font-size: 12px;
   }
   .btn-pop-close {
-    font-size: 20px;
+    width: 30px;
   }
   .pop-body .img-wrap {
     width: 80px;
